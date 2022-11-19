@@ -29,6 +29,14 @@ const ListBooks = ()=>{
                     <p>No result</p>
                 </div>)
                 :(<div className='result'>
+                    {
+                        (volumes.length!==0)?(
+                        <div className='page-bar'>
+                            <div id='previous' onClick={(e)=>{HandlerPrevious()}}>Previous</div>
+                            <div id='page'>{`${context?.page}`}</div>
+                            <div id='next' onClick={(e)=>{HandlerNext()}}>Next</div>
+                        </div>):(<></>)
+                    }
                     <div className='result-element'>
                         {
                             volumes.map((data:any, key: number)=>{
@@ -39,14 +47,6 @@ const ListBooks = ()=>{
                             
                         }
                     </div>
-                    {
-                        (volumes.length!==0)?(
-                        <div className='page-bar'>
-                            <div id='previous' onClick={(e)=>{HandlerPrevious()}}>Previous</div>
-                            <div id='page'>{`${context?.page}`}</div>
-                            <div id='next' onClick={(e)=>{HandlerNext()}}>Next</div>
-                        </div>):(<></>)
-                    }
                 </div>)):(
                 <div className='offline'>
                     <img src={Offline} alt='offline'/>

@@ -27,10 +27,6 @@
             & #page{
                 cursor:default;
             }
-            & #previous:hover , #next:hover{
-                color: gray;
-                transition: color 200ms ease;
-            }
         }
     }
     & .offline{
