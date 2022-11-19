@@ -1,0 +1,10 @@
+.nav{
+    position: relative;
+    width: 100%;
+    & .logo{
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px;
+    }
+}
