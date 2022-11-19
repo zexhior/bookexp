@@ -26,7 +26,6 @@ const ListBooks = ()=>{
 
                 (context?.online)?((volumes.length===0)?(
                 <div className='empty'>
-                    <img src={Empty} alt='empty'/>
                     <p>No result</p>
                 </div>)
                 :(<div className='result'>
