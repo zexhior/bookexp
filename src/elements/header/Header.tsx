@@ -1,7 +1,7 @@
-import { createContext, useContext, useRef, useState } from 'react';
+import { useContext, useRef} from 'react';
 import { AppContext } from '../../components/home/Home';
 import Navigation from '../navigation/Navigation';
-import './header.scss';
+import './Header.scss';
 
 const Header = ()=>{
     const inputref = useRef<HTMLInputElement>(null);
