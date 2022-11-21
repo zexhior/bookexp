@@ -8,11 +8,11 @@ LIVE LINK : https://bookexp.herokuapp.com
 
 # Feature
 
-..* BookExp use Google Books Api for the Back-End of the application. Here is a link of the documentation of how to use Google Books Api https://developers.google.com/books/docs/v1/using
+* BookExp use Google Books Api for the Back-End of the application. Here is a link of the documentation of how to use Google Books Api https://developers.google.com/books/docs/v1/using
 
-..* If you fill the input search, BookExp will give you a list of Card with information about a book and a button "Read this book" inside it.
+* If you fill the input search, BookExp will give you a list of Card with information about a book and a button "Read this book" inside it.
 
-..* The button "Read this book" will redirect the user to google books with more information about the book and the way to get it.
+* The button "Read this book" will redirect the user to google books with more information about the book and the way to get it.
 
 # Getting Started with Create React App
 
