@@ -1,3 +1,19 @@
+# BookExp
+
+# Overview
+
+This application is create for the Chingu voyage 42 pre-work. BookExp is a bookfinder that help people to find information about books. It provide a link to redirect to guide you to the book that you want to read.
+
+LIVE LINK : https://bookexp.herokuapp.com
+
+# Feature
+
+..* BookExp use Google Books Api for the Back-End of the application. Here is a link of the documentation of how to use Google Books Api https://developers.google.com/books/docs/v1/using
+
+..* If you fill the input search, BookExp will give you a list of Card with information about a book and a button "Read this book" inside it.
+
+..* The button "Read this book" will redirect the user to google books with more information about the book and the way to get it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

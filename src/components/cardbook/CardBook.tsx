@@ -27,7 +27,6 @@ const CardBook = (item:any)=>{
                 })}
             </p>):(<></>)}
             {item.item?.publisher?(<p>publisher : {item.item?.publisher}</p>):(<></>)}
-            {item.item?.publishedDate?(<p>published date : {item.item?.publishedDate}</p>):(<></>)}
         </div>
     </div>);
 }

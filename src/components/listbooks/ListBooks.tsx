@@ -18,13 +18,13 @@ const ListBooks = ()=>{
             context?.setPage(context?.page-1);
     }
 
-    const {volumes} = useGetBooks(`https://www.googleapis.com/books/v1/volumes?q=`,context?.query,context?.page,context?.online, context?.setOnLine);
+    const {volumes} = useGetBooks(`https://www.googleapis.com/books/v1/volumes?q=`,context?.query,context?.page);
 
     return (
         <div className='volume-result'>
             {
 
-                (context?.online)?((volumes.length===0)?(
+                (volumes.length===0)?(
                 <div className='empty'>
                     <p>No result</p>
                 </div>)
@@ -47,11 +47,6 @@ const ListBooks = ()=>{
                             
                         }
                     </div>
-                </div>)):(
-                <div className='offline'>
-                    <img src={Offline} alt='offline'/>
-                    <p>You're offline<br/>
-                    check your network</p>
                 </div>)
             }
         </div>

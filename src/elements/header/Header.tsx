@@ -9,8 +9,22 @@ const Header = ()=>{
 
     const HandlerChange = ()=>{
         if(inputref.current){
-            context?.setPage(1);
-            context?.setQuery(inputref.current.value.toLowerCase());
+            //context?.setPage(1);
+            let accepted = true;
+            if(inputref.current?.value){
+                for( let i = 0; i < inputref.current?.value.length; i++){
+                    let letter = inputref.current?.value.charCodeAt(i);
+                    if((letter >= 0 && letter < 48 && letter != 32)||(letter >=58 && letter < 65) || (letter >= 91 && letter < 97) || letter > 122){
+                        accepted = false;
+                        break;
+                    }
+                }
+                if(accepted)
+                    context?.setQuery(inputref.current.value.toLowerCase());
+                    //console.log(inputref.current.value.toLowerCase());
+                else
+                    alert("Don't use special character! Please, insert the proper title of the book!");
+            }
         }
     }
 
